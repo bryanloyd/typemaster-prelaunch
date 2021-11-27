@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap");
 
 :root {
   --1: #f16718;
@@ -25,4 +25,198 @@ body {
 
 img {
   max-width: 100%;
+}
+
+/* Header Component */
+
+.Header,
+.Spotlight_cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px;
+}
+
+.Header_btn,
+.Spotlight_cta button {
+  width: 151px;
+  height: 48px;
+  background-color: #e8eff2;
+  color: #162542;
+  border: none;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.Header_btn:hover {
+  color: #ffffff;
+  background-color: #162542;
+}
+
+.Spotlight_cta button:hover {
+  background-color: #ff9b62;
+}
+
+/* Spotlight Component */
+
+.Spotlight {
+  margin: 40px 0 24px 0;
+}
+
+.Spotlight_content {
+  padding: 0 24px;
+}
+
+.Spotlight_content h1 {
+  font: inherit;
+  color: #162542;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.Spotlight_content p,
+.Spotlight_cta p,
+.Mechanical_content p {
+  font: inherit;
+  color: #7b8bad;
+  font-size: 1.6em;
+  line-height: 2.6rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.Spotlight_cta {
+  margin-bottom: 64px;
+}
+
+.Spotlight_cta button {
+  color: #ffffff;
+  background-color: #f16718;
+}
+
+.Spotlight_cta p {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.Spotlight img {
+  margin-left: 24px;
+  border-radius: 20px;
+}
+
+/* Mechanical Component */
+
+.Mechanical_imgs {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-around;
+  margin: 0 24px 75px -24px;
+}
+
+.Mechanical_imgs .img-phone,
+.Mechanical_imgs .img-glass {
+  border-radius: 25px;
+}
+
+.Mechanical_imgs .overlay {
+  position: absolute;
+  background-color: rgba(241, 103, 24, 0.75);
+  width: 129px;
+  height: 193px;
+  border-radius: 25px;
+  top: 822px;
+  z-index: 2;
+}
+
+.Mechanical_content {
+  margin: 0 24px;
+  text-align: center;
+}
+
+.Mechanical_content h1 {
+  color: #162542;
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  padding: 0 24px 24px 24px;
+}
+
+/* Features Component */
+
+.Features {
+  margin: 96px 24px;
+  text-align: center;
+}
+
+.Features_compatible .container,
+.Features_bluetooth .container,
+.Features_battery .container,
+.Features_backlit .container {
+  width: 65px;
+  height: 65px;
+  background-color: #f16718;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.Features_compatible img,
+.Features_bluetooth img,
+.Features_battery img,
+.Features_backlit img {
+  height: 25px;
+  margin: 20px auto;
+}
+
+.Features_compatible h1,
+.Features_bluetooth h1,
+.Features_battery h1,
+.Features_backlit h1 {
+  margin: 48px 75px 24px 75px;
+  text-transform: uppercase;
+  color: #162542;
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 2.8rem;
+}
+
+.Features_compatible p,
+.Features_bluetooth p,
+.Features_battery p,
+.Features_backlit p {
+  font: inherit;
+  color: #7b8bad;
+  font-size: 1.6em;
+  line-height: 2.6rem;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+/* Footer Component */
+
+.Footer {
+  margin: 48px 24px;
+  text-align: center;
+}
+
+.Footer p {
+  font: inherit;
+  color: #7b8bad;
+  font-size: 1.6em;
+  line-height: 2.6rem;
+  font-weight: 700;
+}
+
+.Footer p span {
+  font-weight: 500;
 }
